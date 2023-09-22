@@ -1,0 +1,134 @@
+/* Import the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Use the Roboto font for all elements */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Set the margin and padding of the body element to zero */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color of the header element to light gray */
+#header {
+  background-color: lightgray;
+  /* Add a box-shadow effect to create some depth */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Set the color and padding of the title element to dark blue and 20 pixels */
+#title {
+  color: darkblue;
+  padding: 20px;
+}
+
+/* Set the margin and padding of the nav element to zero */
+#nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the display, list-style-type, and background-color of the menu items to inline-block, none, and light gray */
+.menu li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: lightgray;
+}
+
+/* Set the color, padding, and text-decoration of the menu links to dark blue, 10 pixels, and none */
+.menu a {
+  color: darkblue;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Add a transition effect to the menu links */
+.menu a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Change the color and background-color of the menu links on hover */
+.menu a:hover {
+  color: white;
+  background-color: darkblue;
+}
+
+/* Set the background color of the main element to white */
+#main {
+  background-color: white;
+}
+
+/* Set the margin and padding of the section elements to 20 pixels */
+section {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Add a box-shadow effect to create some depth */
+section {
+  box-shadow: inset -2px -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Set the border and background color of the video element to none and white */
+#video {
+  border: none;
+  background-color: white;
+}
+
+/* Center the video element horizontally using flexbox */
+#video {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the video element vertically using flexbox */
+#video iframe {
+  align-self: center;
+}
+
+/* Make the video element fit its container without stretching or cropping */
+#video iframe {
+  object-fit: contain;
+}
+
+/* Set the border and background color of the map element to none and white */
+#map {
+  border: none;
+  background-color: white;
+}
+
+/* Center the map element horizontally using flexbox */
+#map {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the map element vertically using flexbox */
+#map iframe {
+  align-self: center;
+}
+
+/* Make the map element fit its container without stretching or cropping */
+#map iframe {
+  object-fit: contain;
+}
+
+/* Set the background color of the footer element to light gray */
+#footer {
+  background-color: lightgray;
+   /* Add a box-shadow effect to create some depth */
+   box-shadow: inset -2px -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Set the color, padding, and text-align of the footer paragraph to dark blue, 10 pixels, and center */
+footer p {
+  color: darkblue;
+   /* Increase the font size and line height of the footer paragraph */
+   font-size: larger;
+   line-height: normal; 
+   padding:10px; 
+   text-align:center; 
+}
