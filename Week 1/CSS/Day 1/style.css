@@ -14,7 +14,7 @@ body {
 
 /* Set the background color of the header element to light gray */
 #header {
-  background-color: lightgray;
+  background-color: darkgray;
   /* Add a box-shadow effect to create some depth */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
