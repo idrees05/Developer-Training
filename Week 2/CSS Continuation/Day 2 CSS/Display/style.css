@@ -1,0 +1,18 @@
+div {
+    background-color: crimson;
+    height: 200px;
+    width: 200px;
+}
+
+span {
+    display: inline;
+    background-color: dodgerblue;
+
+}
+
+
+img {
+    display: inline-block;
+    width: 200px;
+}
+
