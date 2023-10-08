@@ -89,6 +89,14 @@ body, html {
 
 /* prject section */
 
+/* Subheadings */
+
+.text h2 {
+    text-align:start;
+    margin-bottom: 10px;  /* Adjust as needed for spacing below the heading */
+}
+
+/* paragraphs */
 
 #image-text-section {
     font-family: 'Nunito Sans', sans-serif;  /* A more professional font */
@@ -97,6 +105,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     padding: 50px 0;  /* Padding at the top and bottom */
+    text-align:justify;
 }
 
 .container {
@@ -124,5 +133,19 @@ img {
     border-radius: 10px;  /* Optional: for rounded corners */
 }
 
+
+
+/* Footer */
+
+#footer {
+    background: linear-gradient(to right, rgb(68, 0, 255), rgb(0, 191, 255)); /* Same background as your first section */
+    color: white; /* White text for visibility on dark background */
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+    
+    bottom: 0; /* Position at the bottom of the page */
+    width: 100%;
+    left: 0; /* Align to the left edge of the page */
+}
 
 
