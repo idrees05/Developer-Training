@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+
+<!-- Task 1 -->
+<h3>1. Check age for alcohol service</h3>
+<input type="number" id="age" placeholder="Enter age">
+<button onclick="checkAge()">Check</button>
+<p id="result1"></p>
+
+<!-- Task 2 -->
+<h3>2. Check password length</h3>
+<input type="text" id="password" placeholder="Enter password">
+<button onclick="checkPassword()">Check</button>
+<p id="result2"></p>
+
+<!-- Task 3 -->
+<h3>3. Check divisibility by 3 or 5</h3>
+<input type="number" id="number1" placeholder="Enter number">
+<button onclick="checkDivisibility()">Check</button>
+<p id="result3"></p>
+
+<!-- Task 4 -->
+<h3>4. Check divisibility by 3, 5, or both</h3>
+<input type="number" id="number2" placeholder="Enter number">
+<button onclick="checkFizzBuzz()">Check</button>
+<p id="result4"></p>
+
+<script>
+    function checkAge() {
+        let age = document.getElementById("age").value;
+        let result = document.getElementById("result1");
+        
+        if (age < 18) {
+            result.textContent = "Sorry, I can't serve you";
+        } else {
+            result.textContent = "No problem, what would you like to drink?";
+        }
+    }
+
+    function checkPassword() {
+        let password = document.getElementById("password").value;
+        let result = document.getElementById("result2");
+        
+        if (password.length < 8) {
+            result.textContent = "Password is too short";
+        } else {
+            result.textContent = password;
+        }
+    }
+
+    function checkDivisibility() {
+        let number1 = document.getElementById("number1").value;
+        let result = document.getElementById("result3");
+        
+        if (number1 % 3 === 0 || number1 % 5 === 0) {
+            result.textContent = "This number is divisible by 3 or 5";
+        } else {
+            result.textContent = "This number is not divisible by 3 or 5";
+        }
+    }
+
+    function checkFizzBuzz() {
+        let number2 = document.getElementById("number2").value;
+        let result = document.getElementById("result4");
+        
+        if (number2 % 3 === 0 && number2 % 5 === 0) {
+            result.textContent = "fizz buzz";
+        } else if (number2 % 3 === 0) {
+            result.textContent = "fizz";
+        } else if (number2 % 5 === 0) {
+            result.textContent = "buzz";
+        } else {
+            result.textContent = number2;
+        }
+    }
+</script>
+
+</body>
+</html>
