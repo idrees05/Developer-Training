@@ -1,25 +1,35 @@
-function saveData() {
-    const inputData = document.getElementById("dataInput").value;
-    if (inputData) {
-        const currentTime = new Date().toISOString();  // Use current time as a unique key
-        localStorage.setItem(currentTime, inputData);
-        displayData();
-        document.getElementById("dataInput").value = "";  // Clear input after saving
+document.addEventListener("DOMContentLoaded", function() {
+    const fullName = document.getElementById('name');
+    const saveButton = document.getElementById('save');
+    const entriesList = document.getElementById('entriesList');
+
+    saveButton.addEventListener('click', saveToLocalStorage);
+    displayFromLocalStorage();
+
+    function saveToLocalStorage() {
+        let names = JSON.parse(localStorage.getItem('names') || "[]");
+        names.push(fullName.value);
+        localStorage.setItem('names', JSON.stringify(names));
+        displayFromLocalStorage();
     }
+
+    function displayFromLocalStorage() {
+        let names = JSON.parse(localStorage.getItem('names') || "[]");
+        entriesList.innerHTML = '';
+        names.forEach(name => {
+            let li = document.createElement('li');
+            li.textContent = name;
+            entriesList.appendChild(li);
+        });
+    }
+});
+
+
+function extractCharacter(string, index, num) {
+    // Using substr to extract 'num' characters starting from 'index'
+    return string.substr(index, num);
 }
 
-function displayData() {
-    const savedDataList = document.getElementById("savedDataList");
-    savedDataList.innerHTML = "";  // Clear current list
-    for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        const value = localStorage.getItem(key);
-        const listItem = document.createElement("li");
-        listItem.textContent = value;
-        savedDataList.appendChild(listItem);
-    }
-}
-
-window.onload = function() {
-    displayData();  // Display saved data on page load
-}
+// Example usage:
+const result = extractCharacter("Hello, World!", 7, 5);
+console.log(result); // Outputs "World"
