@@ -3,7 +3,7 @@
 A simple password generator with a sci-fi aesthetic. Generate random passwords and copy them to your clipboard with ease.
 
 ![Password Generator Preview](preview.png)  
-*(Replace `preview.png` with the path to your screenshot or image of the app)*
+
 
 ## Features
 - Generate a random 12-character password
@@ -20,7 +20,7 @@ A simple password generator with a sci-fi aesthetic. Generate random passwords a
 
 1. Clone the repository or download the source code.
 2. Navigate to the directory.
-3. Open `password-generator.html` in your browser.
+3. Open `index.html` in your browser.
 
 ## Contributing
 
@@ -28,5 +28,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)s
 
