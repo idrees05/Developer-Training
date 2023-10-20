@@ -6,7 +6,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url('https://www.transparenttextures.com/patterns/always-grey.png'); /* subtle background pattern */
+    background-image: url('http://www.transparenttextures.com/patterns/3px-tile.png'); /* subtle background pattern */
 }
 
 .container {
