@@ -1,0 +1,41 @@
+# List An ordered sequence of items is called List. It is a very 
+# flexible data type in Python. There is no need for the value in
+#  the list to be of the same data type. The List is the data type 
+# that is highly used data type in Python. List datatype is the 
+# most exclusive datatype in Python for containing versatile data. 
+# It can easily hold different types of data in Python.  list1 = 
+#  [5,9.9,'list'] 
+
+
+
+# Tuple:A Tuple is a sequence of items that are in order, 
+# and it is not possible to modify the Tuples. 
+# The main difference list and tuples are that tuple is immutable, 
+# which means it cannot be altered. Tuples are generally faster 
+# than the list data type in Python because it cannot be changed 
+# or modified like list datatype. The primary use of Tuples is to 
+# write-protect data. Tuples can be represented by using parentheses(), 
+# and commas are used to separate the items. t = (6,’tuple’,4+2r)
+
+
+# Set:  The Collection of Unique items that are not in order is called Set. 
+# Braces {} are used to defined set and a comma is used to separate values. 
+# One will find that the items are unordered in a set data type. 
+# Duplicates are eliminated in a set and set only keeps unique values. 
+# Operations like intersection and union can be performed on two sets.
+# a = {4,5,5,6,6,6} The slicing operator does not work on set because the 
+# set is not a collection of ordered items, and that is why there is no 
+# meaning to the indexing of set
+
+
+
+# Dictionary
+# Dictionary is a type of python data type in which collections are unordered, 
+# and values are in pairs called key-value pairs. This type of data type is useful 
+# when there is a high volume of data. One of the best functions of Dictionaries 
+# data type is retrieving the data for which it is optimized. The value can only 
+# be retrieved if one knows the key to retrieve it.  Braces {} (curly brackets) 
+# are used to define dictionaries data type in Python. A Pair in the dictionary 
+# data type is an item which is represented as key:value. The value and the key 
+# can be of any data type. Python Dictionary can look like this:
+# dictionary1 = {3:’key’,4:’value’}
