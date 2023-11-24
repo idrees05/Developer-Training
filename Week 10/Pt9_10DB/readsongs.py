@@ -6,7 +6,7 @@ def read_songs():
     # select all records
     dbCursor.execute("SELECT * FROM songs")
 
-    dbCursor.execute("SELECT * FROM songs WHERE SongID = 1 ")
+    # dbCursor.execute("SELECT * FROM songs WHERE SongID = 1 ")
 
     # fetch the selected records
     allRecords = dbCursor.fetchall()
@@ -15,5 +15,5 @@ def read_songs():
     for eachRecord in allRecords:
         print(eachRecord)
 
-# if __name__ == "__main__":
-read_songs()
+if __name__ =="__main__":
+    read_songs()
