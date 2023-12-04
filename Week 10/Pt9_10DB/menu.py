@@ -2,7 +2,7 @@ import readsongs, addsongs, updatesongs, deletesongs, reports
 
 # create function 
 def menuFile():
-    with open('Week10/Pt9_10DB/songsMenu.txt') as songMenuFile:
+    with open('Software Bootcamp/Week 10/Pt9_10DB/songsMenu.txt') as songMenuFile:
 
         # read from the menu file and assign it to a variable
         songFileData = songMenuFile.read()
